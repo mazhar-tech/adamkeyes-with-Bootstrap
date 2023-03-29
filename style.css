@@ -1,0 +1,155 @@
+/* GLOBAL */
+:root {
+  --bg-body: hsl(0, 0%, 8%);
+  --bg-contact: hsl(0, 0%, 14%);
+  --accent: hsl(153, 71%, 59%);
+  --text1: hsl(0, 0%, 100%);
+  --text2: hsl(0, 0%, 85%);
+  --invalid: hsl(7, 100%, 68%);
+  --fs-18: 1.12rem;
+  --fs-88: 5.5rem;
+  --fs-72: 4.5rem;
+  --fs-48: 3rem;
+  --fs-40: 2.5rem;
+  --fs-32: 2rem;
+  --fs-24: 1.5rem;
+  --container: 69.375rem;
+  --transition: 250ms ease-in-out;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text1);
+}
+
+/* #main{
+    background-color: var(--bg-contact);
+  } */
+#mid-text {
+  color: var(--text2);
+}
+
+#hr-2 {
+  width: 82%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2px;
+  background: var(--text1);
+}
+
+#hr-1 {
+  height: 2px;
+  background: var(--accent);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  margin-right: 30px;
+  /* Horizontal Space */
+  margin-bottom: 30px;
+  /* Vertical Space */
+  margin-top: 20px;
+}
+/*for Hover Effect on button*/
+#button a {
+  background-image: linear-gradient(to right,
+      #0ee962,
+      #20cfdb 50%,
+      #ffffff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#button a:before {
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+
+}
+
+#button a:hover {
+  background-position: 0;
+}
+
+#button a:hover::before {
+  width: 100%;
+}
+
+#contect {
+  background-color: var(--bg-contact);
+}
+
+#text-box {
+  margin-left: 220px;
+  margin-top: 50px;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: var(--bg-contact);
+  
+}
+
+
+.form-control:focus {
+  background-color: var(--bg-contact);
+  box-shadow: none;
+}
+
+.button2{
+border: #0ee962;
+}
+
+/* img hover */
+.image6 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image6:hover .image6 {
+  opacity: 0.3;
+}
+
+.image6:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #1fbd6e;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
